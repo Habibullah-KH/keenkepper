@@ -4,4 +4,6 @@
     nav {
         @apply flex justify-between p-4 shadow;
     }
+
+    
 }
