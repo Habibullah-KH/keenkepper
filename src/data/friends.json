@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Johnson",
+    "picture": "https://i.pravatar.cc/300",
+    "email": "alex@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["college"],
+    "bio": "Met in university",
+    "goal": 14,
+    "next_due_date": "2026-04-30"
+  }
+]
