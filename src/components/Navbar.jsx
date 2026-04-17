@@ -3,19 +3,19 @@ import { FaHome, FaChartPie, FaClock } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between p-4 shadow">
-      <h1 className="font-bold text-xl">KeenKeeper</h1>
+    <nav className="nav">
+      <h1 className="font-bold text-xl">Keen<span className="font-normal">Keeper</span></h1>
 
       <div className="flex gap-6">
-        <NavLink to="/" className={({ isActive }) => isActive && "text-blue-500"}>
+        <NavLink to="/" className={({ isActive }) => isActive ? "bg-green-800 text-white p-2 rounded-sm" : "text-green-80 p-2"}>
           <FaHome className="inline mr-1" /> Home
         </NavLink>
 
-        <NavLink to="/timeline">
+        <NavLink to="/timeline" className={({ isActive }) => isActive ? "bg-green-800 text-white p-2 rounded-sm" : "text-green-80 p-2"}>
           <FaClock className="inline mr-1" /> Timeline
         </NavLink>
 
-        <NavLink to="/stats">
+        <NavLink to="/stats" className={({ isActive }) => isActive ? "bg-green-800 text-white p-2 rounded-sm" : "text-green-80 p-2"}>
           <FaChartPie className="inline mr-1" /> Stats
         </NavLink>
       </div>
